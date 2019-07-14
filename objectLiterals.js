@@ -11,7 +11,7 @@ const person = {
     getBirthYear: function() {
         return 1960;
         }
-}
+    }
 
 let val;
 
