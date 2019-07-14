@@ -33,6 +33,6 @@ val = numbers.sort(function(a, b){
 function under50(num){
     return num < 50;
 };
-val = numbers.find(under50);
+val = numbers.find(under50);    //finds just the first value under 50
 
 console.log(val);
