@@ -12,6 +12,7 @@ function test()
     }
 test();
 
+console.log('Global Scope: ', a, b, c);
 //Block scope
 if(true)
     {
@@ -20,5 +21,7 @@ if(true)
     const c = 6;
     console.log('Block Scope: ', a, b, c);
     }
+    //Notice that var changes in the global scope
+    //This is different than most other longuages and can cause security issues
 
 console.log('Global Scope: ', a, b, c);
