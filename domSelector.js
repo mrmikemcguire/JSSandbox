@@ -29,10 +29,16 @@ console.log(document.querySelector('.card-title'));
 
 // target a specific element if it's one of many
 
-document.querySelector('li').style.color = 'red';
-document.querySelector('li:last-child').style.color = 'red';
-document.querySelector('li:nth-child(3)').style.color = 'green';
-document.querySelector('li:nth-child(4)').textContent = 'Hello World';
+// document.querySelector('li').style.color = 'red';
+// document.querySelector('li:last-child').style.color = 'red';
+// document.querySelector('li:nth-child(3)').style.color = 'green';
+// document.querySelector('li:nth-child(4)').textContent = 'Hello World';
+
+//multiple element selectors
+
+document.querySelectorAll('li:nth-child(odd)').style.color = 'red';
+
+
 
 
 
