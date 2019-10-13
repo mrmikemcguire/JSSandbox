@@ -36,7 +36,53 @@ console.log(document.querySelector('.card-title'));
 
 //multiple element selectors
 
-document.querySelectorAll('li:nth-child(odd)').style.color = 'red';
+// document.getElementsByClassName
+
+const items = document.getElementsByClassName('collection-item');
+console.log(items);
+items[0].style.color = 'red';
+
+const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+console.log(listItems);
+
+let lis = document.getElementsByTagName('li');
+console.log(lis);
+
+// convert HTML collection to an array
+
+lis = Array.from(lis);
+lis.reverse();
+console.log(lis);
+
+lis.forEach(function(li) {
+    console.log(lis.className)
+});
+
+// querySelectorAll - returns node list instead of HTML collection
+// This eliminates the need to convert to an array
+
+const items2 = document.querySelectorAll('ul.collection li.collection-item');
+
+console.log(items2);
+
+items2.forEach(function(item2) {
+    console.log(items2.className)
+});
+
+const liOdd = document.querySelectorAll('li:nth-child(odd)');
+const liEven = document.querySelectorAll('li:nth-child(even)');
+
+liOdd.forEach(function(li, index) {
+    li.style.background = '#ccc';
+});
+
+for(let i = 0; i < liEven.length; i++)
+    {
+    liEven[i].style.background = '#f4f4f4';
+    }
+
+console.log(items2);
+
 
 
 
