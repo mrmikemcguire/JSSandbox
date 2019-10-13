@@ -16,7 +16,7 @@ document.getElementById('task-title').textContent = 'Task List';
 document.getElementById('task-title').innerText = 'My Tasks';
 document.getElementById('task-title').innerHTML = '<span style = "color:red">Task List</span>';
 
-//Use shortcot
+//Use shortcut
 
 const taskTitle = document.getElementById('task-title');
 //Now call methods on the taskTitle variable
